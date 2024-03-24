@@ -1,0 +1,64 @@
+---
+import { Image } from "astro:assets";
+import img1 from "../../images/portfolio/img1.png";
+import img2 from "../../images/portfolio/img2.jpg";
+import img3 from "../../images/portfolio/img3.jpg";
+import img4 from "../../images/portfolio/img4.jpg";
+import img5 from "../../images/portfolio/img5.jpg";
+import img6 from "../../images/portfolio/img6.png";
+import img7 from "../../images/portfolio/img7.jpg";
+import img8 from "../../images/portfolio/img8.jpg";
+import img9 from "../../images/portfolio/img9.jpg";
+import ImgContainer from "./ImgContainer.astro";
+---
+
+<section class="mt-24 text-white">
+  <header class="flex flex-col w-full items-center">
+    <div class="flex w-full gap-x-4 items-center justify-center">
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <h3 class="text-dd-grey text-3xl">Services</h3>
+      <div class="size-3 rounded-full bg-dd-primary"></div>
+      <div class="w-10 h-[2px] bg-dd-grey"></div>
+    </div>
+    <h3 class="text-5xl mt-8 font-semibold">What We Have to Offer</h3>
+  </header>
+  <main class="flex flex-col gap-4 mt-8">
+    <section class="flex gap-4 w-full">
+      <ImgContainer src={img1}>
+        <p class="text-2xl font-semibold">Business Analysis</p>
+      </ImgContainer>
+      <ImgContainer src={img2}>
+        <p class="text-2xl font-semibold">Digital Marketing</p>
+      </ImgContainer>
+      <ImgContainer src={img3}>
+        <p class="text-2xl font-semibold">Creative</p>
+      </ImgContainer>
+    </section>
+
+    <ImgContainer src={img4}>
+      <p class="text-2xl font-semibold">Content Creation</p>
+    </ImgContainer>
+
+    <section class="flex gap-4 w-full">
+      <ImgContainer src={img5}>
+        <p class="text-2xl font-semibold">Development</p>
+      </ImgContainer>
+      <ImgContainer src={img6}>
+        <p class="text-2xl font-semibold">Affiliate Marketing</p>
+      </ImgContainer>
+    </section>
+
+    <section class="flex gap-4 w-full">
+      <ImgContainer src={img7}>
+        <p class="text-2xl font-semibold">Affiliate Marketing</p>
+      </ImgContainer>
+      <ImgContainer src={img8}>
+        <p class="text-2xl font-semibold">Affiliate Marketing</p>
+      </ImgContainer>
+      <ImgContainer src={img9}>
+        <p class="text-2xl font-semibold">Affiliate Marketing</p>
+      </ImgContainer>
+    </section>
+  </main>
+</section>

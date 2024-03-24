@@ -4,10 +4,11 @@ import MainLayout from "../layouts/MainLayout.astro";
 import hero from "../../src/images/hero.jpg";
 import { Icon } from "astro-icon/components";
 import Skils from "../components/Skils.astro";
+import Services from "../components/services/Services.astro";
 ---
 
 <MainLayout>
-  <section class="max-w-7xl m-auto flex">
+  <section class="mx-16 flex">
     <div class="flex flex-1 mt-20 gap-x-10">
       <div class="social-icons flex flex-col gap-10">
         <Icon name="basil:facebook-outline" class="text-dd-grey" size={32} />
@@ -26,12 +27,14 @@ import Skils from "../components/Skils.astro";
             <h1>We offer You <span class="text-dd-primary">A</span></h1>
             <h1 class="flex items-baseline">
               <span class="text-dd-primary pr-4">Digital </span> Platform <span
-                ><div class="bg-dd-primary size-3 rounded-full ml-4"></div></span
+                ><div class="bg-dd-primary size-3 rounded-full ml-4">
+                </div></span
               >
             </h1>
           </div>
           <p class="text-dd-grey mt-8">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi odit minima molestiae laborum eaque.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi odit
+            minima molestiae laborum eaque.
           </p>
         </div>
         <div class="hero-text-footer mt-16 flex gap-x-2 items-center">
@@ -45,4 +48,5 @@ import Skils from "../components/Skils.astro";
   </section>
 
   <Skils />
+  <Services />
 </MainLayout>
