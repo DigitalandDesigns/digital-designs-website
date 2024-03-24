@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import hero from "../../src/images/hero.jpg";
 import { Icon } from "astro-icon/components";
+import Skils from "../components/Skils.astro";
 ---
 
 <MainLayout>
@@ -42,4 +43,6 @@ import { Icon } from "astro-icon/components";
     </div>
     <div class="flex-1"><Image src={hero} alt="hero image" /></div>
   </section>
+
+  <Skils />
 </MainLayout>

@@ -1,0 +1,29 @@
+---
+import { Icon } from "astro-icon/components";
+
+const skills = [
+  { title: "Advanced Tools", icon: "iconoir:tools", body: "Scelerisque viverra mauris in aliquam sem fringilla ut." },
+  { title: "Inovation", icon: "iconoir:brain", body: "Sit amet volutpat consequat mauris nunc congue nisi." },
+  {
+    title: "Creative Ideas",
+    icon: "iconoir:light-bulb-on",
+    body: "Sagittis aliquam malesuada bibendum arcu vitae elem.",
+  },
+];
+---
+
+<section class="max-w-7xl m-auto flex justify-between my-16">
+  {
+    skills.map((skill) => (
+      <div class="card flex gap-x-3 ">
+        <div />
+        <Icon name={skill.icon} class="text-dd-primary" size={80} />
+
+        <div class="text-white w-56">
+          <h3 class="text-2xl font-semibold">{skill.title}</h3>
+          <p class="text-dd-grey mt-4">{skill.body}</p>
+        </div>
+      </div>
+    ))
+  }
+</section>
