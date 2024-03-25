@@ -13,6 +13,7 @@ export default {
         "dd-primary": "#DD4242",
         "dd-grey": "#717171",
         "dd-card-grey": "#1D1E22",
+        "dd-text-grey": "#B5B5B5",
       },
     },
   },
