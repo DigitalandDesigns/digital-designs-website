@@ -3,9 +3,10 @@ import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
 import hero from "../../src/images/hero.jpg";
 import { Icon } from "astro-icon/components";
-import Skils from "../components/Skils.astro";
-import Services from "../components/services/Services.astro";
-import Stats from "../components/Stats.astro";
+import Skils from "../components/landing-page/Skils.astro";
+import Services from "../components/landing-page/services/Services.astro";
+import Stats from "../components/landing-page/Stats.astro";
+import Portfolio from "../components/landing-page/portfolio/Portfolio.astro";
 ---
 
 <MainLayout>
@@ -67,4 +68,5 @@ import Stats from "../components/Stats.astro";
   <Skils />
   <Services />
   <Stats />
+  <Portfolio />
 </MainLayout>
