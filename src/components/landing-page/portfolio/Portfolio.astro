@@ -1,5 +1,10 @@
 ---
 import ImgContainer from "./ImgContainer.astro";
+import folio1 from "../../../images/portfolio/folio1.jpg";
+import folio2 from "../../../images/portfolio/folio2.jpg";
+import folio3 from "../../../images/portfolio/folio3.jpg";
+import folio4 from "../../../images/portfolio/folio4.jpg";
+import folio5 from "../../../images/portfolio/folio5.jpg";
 ---
 
 <section class="mt-24 text-white">
@@ -16,15 +21,114 @@ import ImgContainer from "./ImgContainer.astro";
 
   <main class="flex flex-col gap-4 mt-8">
     <section class="flex gap-4 w-full">
-      <!-- <ImgContainer src={img1}>
-        <p class="text-2xl font-semibold">Business Analysis</p>
+      <ImgContainer src={folio1} basis="basis-1/3">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-4xl font-semibold hover:text-dd-primary">
+            Business Analysis
+          </h3>
+          <p class="max-w-md">
+            Turpis egestas integer eget aliquet nibh praesent. Accumsan lacus
+            vel facilisis volutpat est egestas dui.
+          </p>
+          <a href="#" class="flex gap-x-4 items-center">
+            <div class="w-10 h-[2px] bg-dd-grey"></div>
+            <div class="size-2 rounded-full bg-dd-primary"></div>
+            <h3 class="">Read More</h3>
+          </a>
+        </div>
       </ImgContainer>
-      <ImgContainer src={img2}>
-        <p class="text-2xl font-semibold">Digital Marketing</p>
+      <ImgContainer src={folio2} basis="basis-2/3">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-4xl font-semibold hover:text-dd-primary">
+            Business Analysis
+          </h3>
+          <p class="max-w-md">
+            Turpis egestas integer eget aliquet nibh praesent. Accumsan lacus
+            vel facilisis volutpat est egestas dui.
+          </p>
+          <a href="#" class="flex gap-x-4 items-center">
+            <div class="w-10 h-[2px] bg-dd-grey"></div>
+            <div class="size-2 rounded-full bg-dd-primary"></div>
+            <h3 class="">Read More</h3>
+          </a>
+        </div>
       </ImgContainer>
-      <ImgContainer src={img3}>
-        <p class="text-2xl font-semibold">Creative</p>
-      </ImgContainer> -->
+      <ImgContainer src={folio3} basis="basis-1/3">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-4xl font-semibold hover:text-dd-primary">
+            Business Analysis
+          </h3>
+          <p class="max-w-md">
+            Turpis egestas integer eget aliquet nibh praesent. Accumsan lacus
+            vel facilisis volutpat est egestas dui.
+          </p>
+          <a href="#" class="flex gap-x-4 items-center">
+            <div class="w-10 h-[2px] bg-dd-grey"></div>
+            <div class="size-2 rounded-full bg-dd-primary"></div>
+            <h3 class="">Read More</h3>
+          </a>
+        </div>
+      </ImgContainer>
+    </section>
+
+    <!-- SECOND ROW -->
+    <section class="flex gap-4 w-full">
+      <div class="basis-[48%]">
+        <div class="flex flex-col h-full justify-center items-center gap-4">
+          <div class="flex flex-col gap-6">
+            <h3 class="relative text-6xl font-semibold">
+              All Projects
+              <div
+                class="absolute -top-6 -left-6 size-24 rounded-full -z-10 bg-dd-primary"
+              >
+              </div>
+            </h3>
+            <p class="max-w-lg">
+              Dolor sit amet consectetur adipiscing elit ut aliquam purus sit.
+              Euismod nisi porta lorem mollis aliquam ut porttitor. In hac
+              habitasse platea dictumst. Amet massa vitae tortor condimentum
+              lacinia quis.
+            </p>
+            <a href="#" class="flex gap-x-4 items-center">
+              <div class="w-10 h-[2px] bg-dd-grey"></div>
+              <div class="size-2 rounded-full bg-dd-primary"></div>
+              <h3 class="">Read More</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+      <ImgContainer src={folio4} basis="basis-[31%]">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-4xl font-semibold hover:text-dd-primary">
+            Business Analysis
+          </h3>
+          <p class="max-w-md">
+            Turpis egestas integer eget aliquet nibh praesent. Accumsan lacus
+            vel facilisis volutpat est egestas dui.
+          </p>
+          <a href="#" class="flex gap-x-4 items-center">
+            <div class="w-10 h-[2px] bg-dd-grey"></div>
+            <div class="size-2 rounded-full bg-dd-primary"></div>
+            <h3 class="">Read More</h3>
+          </a>
+        </div>
+      </ImgContainer>
+      <ImgContainer src={folio5} basis="basis-[31%]">
+        <div class="flex flex-col gap-4">
+          <h3 class="text-4xl font-semibold hover:text-dd-primary">
+            Business Analysis
+          </h3>
+          <p class="max-w-md">
+            Turpis egestas integer eget aliquet nibh praesent. Accumsan lacus
+            vel facilisis volutpat est egestas dui.
+          </p>
+          <a href="#" class="flex gap-x-4 items-center">
+            <div class="w-10 h-[2px] bg-dd-grey"></div>
+            <div class="size-2 rounded-full bg-dd-primary"></div>
+            <h3 class="">Read More</h3>
+          </a>
+        </div>
+      </ImgContainer>
     </section>
   </main>
 </section>
