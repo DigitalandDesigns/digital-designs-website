@@ -15,6 +15,16 @@ export default {
         "dd-card-grey": "#1D1E22",
         "dd-text-grey": "#B5B5B5",
       },
+      keyframes: {
+        imgbounce: {
+          "0%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.1)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        "img-bounce": "imgbounce 16s linear infinite",
+      },
     },
   },
   plugins: [],
