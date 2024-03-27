@@ -3,8 +3,8 @@ import { Image } from "astro:assets";
 const { src } = Astro.props;
 ---
 
-<div class="relative group overflow-hidden">
-  <Image src={src} alt="img1" />
+<div class="relative group overflow-hidden w-full">
+  <Image src={src} alt="img1" class="size-full object-cover" />
   <div
     class="absolute top-0 -left-full size-full p-4 transition-all duration-500 group-hover:left-0 text-white"
   >

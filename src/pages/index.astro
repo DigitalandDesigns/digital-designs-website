@@ -10,39 +10,39 @@ import Portfolio from "../components/landing-page/portfolio/Portfolio.astro";
 ---
 
 <MainLayout>
-  <section class="mx-16 flex">
-    <div class="flex flex-1 mt-20 gap-x-10">
+  <section class="mx-16 min-[1600px]:mx-32 flex">
+    <div class="flex flex-1 mt-20 min-[1600px]:mt-44 gap-x-20">
       <div class="social-icons flex flex-col gap-16">
         <Icon
           name="basil:facebook-outline"
           class="text-dd-grey hover:text-dd-primary"
-          size={32}
+          size={40}
         />
         <Icon
           name="basil:instagram-outline"
           class="text-dd-grey hover:text-dd-primary"
-          size={32}
+          size={40}
         />
         <Icon
           name="basil:twitter-outline"
           class="text-dd-grey hover:text-dd-primary"
-          size={32}
+          size={40}
         />
         <Icon
           name="basil:pinterest-outline"
           class="text-dd-grey hover:text-dd-primary"
-          size={32}
+          size={40}
         />
       </div>
-      <div class="hero-text-header">
+      <div class="hero-text-header flex flex-col gap-2">
         <div class="flex gap-x-4 items-center">
           <div class="w-10 h-[2px] bg-dd-grey"></div>
           <div class="size-3 rounded-full bg-dd-primary"></div>
           <h3 class="text-dd-grey text-3xl">Innovative Ideas</h3>
         </div>
-        <div class="hero-text-body mt-5">
-          <div class="text-5xl text-white font-semibold">
-            <h1>We offer You <span class="text-dd-primary">A</span></h1>
+        <div class="hero-text-body mt-5 max-w-lg">
+          <div class="text-6xl text-white font-semibold">
+            <h1>We Offer You <span class="text-dd-primary">A</span></h1>
             <h1 class="flex items-baseline">
               <span class="text-dd-primary pr-4">Digital </span> Platform <span
                 ><div class="bg-dd-primary size-3 rounded-full ml-4">
@@ -50,15 +50,15 @@ import Portfolio from "../components/landing-page/portfolio/Portfolio.astro";
               >
             </h1>
           </div>
-          <p class="text-dd-grey mt-8">
+          <p class="text-dd-text-grey mt-14">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi odit
             minima molestiae laborum eaque.
           </p>
         </div>
         <div class="hero-text-footer mt-16 flex gap-x-2 items-center">
-          <div class="w-10 h-[2px] bg-dd-grey"></div>
+          <div class="w-10 h-[2px] bg-dd-text-grey"></div>
           <div class="bg-white size-2 rounded-full ml-3"></div>
-          <p class="text-dd-primary">Get Started</p>
+          <p class="text-white hover:text-dd-primary">Get Started</p>
         </div>
       </div>
     </div>
