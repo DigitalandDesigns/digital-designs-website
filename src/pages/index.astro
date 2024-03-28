@@ -8,10 +8,11 @@ import Services from "../components/landing-page/services/Services.astro";
 import Stats from "../components/landing-page/Stats.astro";
 import Portfolio from "../components/landing-page/portfolio/Portfolio.astro";
 import Feedback from "../components/landing-page/Feedback.astro";
+import LogoSlider from "../components/react/LogoSlider";
 ---
 
 <MainLayout>
-  <section class="ml-16 min-[1600px]:ml-32 flex h-screen relative">
+  <!-- <section class="ml-16 min-[1600px]:ml-32 flex h-screen relative">
     <div class="flex flex-1 mt-48 min-[1600px]:mt-72 gap-x-20">
       <div class="social-icons flex flex-col gap-16">
         <Icon
@@ -69,11 +70,12 @@ import Feedback from "../components/landing-page/Feedback.astro";
       alt="hero image"
       class="absolute -z-10 top-0 right-0 w-3/5 animate-img-bounce"
     />
-  </section>
+  </section> -->
 
   <Skils />
   <Services />
   <Stats />
   <Portfolio />
+  <LogoSlider client:only="react" />
   <Feedback />
 </MainLayout>
