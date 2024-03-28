@@ -2,8 +2,43 @@
 import FooterNav from "./FooterNav.astro";
 ---
 
-<footer class="mt-10 text-white">
-  <p>This is footer</p>
+<footer class="text-dd-text-grey">
+  <section class="min-[1600px]:mx-32 mx-8 flex my-32">
+    <div class="flex basis-[60%] flex-col gap-10">
+      <div class="flex items-center gap-x-4">
+        <img src="logo.png" class="w-14" alt="logo" />
+        <p class="text-dd-primary font-extrabold text-3xl">
+          DIGITAL <span class="text-white">&</span> DESIGNS
+        </p>
+      </div>
+      <p class="max-w-lg">
+        Sodales ut etiam sit amet. Eget nulla facilisi etiam dignissim. Aliquam
+        vestibulum morbi blandit cursus risus. Ultrices vitae auctor eu augue ut
+        lectus. Ultricies integer quis auctor elit sed vulputate mi sit amet.
+      </p>
+    </div>
+    <div class="flex basis-[40%] w-full">
+      <div class="flex flex-col basis-1/2 w-full">
+        <h3 class="text-2xl mb-10 text-white">Contact Us</h3>
+        <div class="flex flex-col gap-6">
+          <p>No: 58 A, East Madison Street, Baltimore, MD, USA 4508</p>
+          <p>Phone : +000 - 123 - 456789</p>
+          <p>Mail : info@example.com</p>
+          <p>Working Hours : 8hrs</p>
+        </div>
+      </div>
+
+      <div class="flex flex-col basis-1/2 w-full">
+        <h3 class="text-2xl mb-10 text-white">Services</h3>
+        <div class="flex flex-col gap-6">
+          <p>Branding and Identity</p>
+          <p>Webdesign and Development</p>
+          <p>Mobile App Development</p>
+          <p>Digital Marketing</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="border-t-[1px] border-solid border-dd-grey">
     <FooterNav />
   </section>

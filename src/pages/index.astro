@@ -8,6 +8,7 @@ import Services from "../components/landing-page/services/Services.astro";
 import Stats from "../components/landing-page/Stats.astro";
 import Portfolio from "../components/landing-page/portfolio/Portfolio.astro";
 import Feedback from "../components/landing-page/Feedback.astro";
+import Team from "../components/landing-page/team/Team.astro";
 import LogoSlider from "../components/react/LogoSlider";
 import SocialSlider from "../components/react/SocialSlider";
 ---
@@ -79,5 +80,6 @@ import SocialSlider from "../components/react/SocialSlider";
   <Portfolio />
   <LogoSlider client:only="react" />
   <Feedback />
+  <Team />
   <SocialSlider client:only="react" />
 </MainLayout>
