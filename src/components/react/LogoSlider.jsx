@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 
 const LogoSlider = () => {
   return (
-    <section className="py-20 mt-28 bg-dd-section-bg">
+    <section className="py-20 mt-28 bg-dd-section-bg ">
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
@@ -19,6 +19,20 @@ const LogoSlider = () => {
         loop={true}
         modules={[FreeMode, Pagination]}
         className="mySwiper"
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
       >
         <SwiperSlide>
           <div className="grayscale  hover:grayscale-0 cursor-grab w-full flex items-center justify-center">

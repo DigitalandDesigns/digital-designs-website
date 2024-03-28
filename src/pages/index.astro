@@ -9,6 +9,7 @@ import Stats from "../components/landing-page/Stats.astro";
 import Portfolio from "../components/landing-page/portfolio/Portfolio.astro";
 import Feedback from "../components/landing-page/Feedback.astro";
 import LogoSlider from "../components/react/LogoSlider";
+import SocialSlider from "../components/react/SocialSlider";
 ---
 
 <MainLayout>
@@ -78,4 +79,5 @@ import LogoSlider from "../components/react/LogoSlider";
   <Portfolio />
   <LogoSlider client:only="react" />
   <Feedback />
+  <SocialSlider client:only="react" />
 </MainLayout>
