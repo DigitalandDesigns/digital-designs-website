@@ -3,19 +3,19 @@ import { Icon } from "astro-icon/components";
 
 const skills = [
   {
-    title: "Advanced Tools",
-    icon: "iconoir:tools",
-    body: "Scelerisque viverra mauris in aliquam sem fringilla ut.",
-  },
-  {
-    title: "Inovation",
+    title: "Think",
     icon: "iconoir:brain",
-    body: "Sit amet volutpat consequat mauris nunc congue nisi.",
+    body: "We help to create a Marketing strategy and ideas that help your brand stand out.",
   },
   {
-    title: "Creative Ideas",
-    icon: "iconoir:light-bulb-on",
-    body: "Sagittis aliquam malesuada bibendum arcu vitae elem.",
+    title: "Create",
+    icon: "iconoir:tools",
+    body: "Our expertise in creating stunning visuals and engaging video content will make your business appealing to large audiences.",
+  },
+  {
+    title: "Execute",
+    icon: "iconoir:rocket",
+    body: "Content rollout and digital advertising strategies help create a lasting impact. Our team ensures strategy execution brings results.",
   },
 ];
 ---
@@ -29,7 +29,7 @@ const skills = [
         <div />
         <Icon name={skill.icon} class="text-dd-primary" size={80} />
 
-        <div class="text-white w-56">
+        <div class="text-white w-72">
           <h3 class="text-2xl font-semibold">{skill.title}</h3>
           <p class="text-dd-grey mt-4">{skill.body}</p>
         </div>
