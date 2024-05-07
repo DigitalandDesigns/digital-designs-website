@@ -25,6 +25,9 @@ export default {
       animation: {
         "img-bounce": "imgbounce 16s linear infinite",
       },
+      backgroundImage: {
+        "detail-img": "url('/service-detail.jpg')",
+      },
     },
   },
   plugins: [],
